@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Site du Shield Versus Spear</title>
+    <link rel="icon" href="icone.jpg" type="image/jpg">
+    <link rel="stylesheet" href="./ecole.css" />
+    <link rel="stylesheet" href="./accueil.css" />
+    <link rel="stylesheet" href="./formation.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./autres.css" />
+  </head>
+  
+  <body>
+  
+    <header>
+      <h1>CONTACT </h1>
+      <h2> Contact </h2>
+      <p> </p>
+    </header>
+     <img class="logo" src="./sv.png" alt=" Bouclier contre lance " />
+    <nav>
+      <a href="./index.html" >
+          <img class="logo2" src="./sv.png"  alt=" Bouclier contre lance "/>
+      </a>
+      <ul>
+        <li>
+          <a href="./index.html" >ACCUEIL</a>
+        </li>
+        <li> 
+          <a href="./formation.html">FORMATION</a>
+        </li>
+        <li>
+          <a href="./contact.html">CONTACT</a>
+        </li>
+        <li>
+          <a href="./autres.html">AUTRE</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section class ="formulairecontact">
+        <div>
+          <h2 class ="titreh2"> Formulaire de contact </h2>
+          <h3> Contact form </h3>
+        </div>
+        <article>
+            <form 
+              action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php"
+              method="post">
+      
+              <label for="u_name">
+                <abbr title="First Name">Nom :</abbr>
+              </label>
+              <input id="u_name"
+                name="nom_utilisateur"
+                type="text"
+                required
+                placeholder="nom"
+              />
+      
+              <label for="u_firstname">
+                <abbr title="Last Name">Prénom : </abbr>
+              </label>
+              <input id="u_firstname"
+                name="prenom_utilisateur"
+                type="text"
+                placeholder="prénom"
+              />
+      
+              <label for="doc_update">
+               <abbr title="Date of birth"> Date de naissance :  </abbr> 
+              </label>
+              <input id="doc_update"
+                name="date_maj_document"
+                type="date"
+                required							
+              />
+      
+              <label for="u_email">
+                <abbr title="Email">Email : </abbr>
+              </label>
+              <input id="u_email"
+                name="email_utilisateur"
+                type="text"
+                placeholder="email de contact "/>
+              
+              <label for="doc_type">
+                <abbr title="Type of training"> Type Formation : </abbr>
+              </label>
+              <input id="doc_type"
+                name="type_document"
+                type="text"
+                required
+                placeholder="choisissez"
+                list="types_de_docs"/>
+      
+              <fieldset>
+                <legend> Urgence de l'envoi </legend>
+                <input id="in_radio_urgence_top"
+                  type="radio"
+                  name="urgence_envoi"
+                  value="top priorite"
+                />
+                
+                
+                <label for="in_radio_urgence_top">
+                  TOP priorité !!!
+                </label>
+                <input id="in_radio_urgence_cava"
+                  type="radio"
+                  name="urgence_envoi"
+                  value="ca va"
+                />
+                <label for="in_radio_urgence_cava">
+                  Ca va ! 
+                </label>
+                <input id="in_radio_urgence_procrast"
+                  type="radio"
+                  name="urgence_envoi"
+                  value="procrastinable"
+                />
+                <label for="in_radio_urgence_procrast">
+                  Procrastinable ~
+                </label>
+              </fieldset> 
+      
+      
+              <label for="u_message">
+                <abbr title="A message ? ">Un message  ?</abbr>
+              </label>
+              <input id="u_message" 
+                name="message_utilisateur"
+                type="text"
+                placeholder="commentaire "
+                />
+              
+      
+              <input 
+                name="je_te_connais"
+                type="hidden"
+                value="ton_numero_est_24254"
+              />
+      
+              <input type="submit" value="Envoyer" />
+              <input type="reset"  value="Annuler" />
+            </form>
+            
+            <datalist id="types_de_docs">
+              <option value="Baby Agent (BA)"> </option>
+              <option value=" Agent Secret (AS)"> </option> 
+              <option value="Voleur SPE (VS)"> </option> 
+            </datalist>		
+            
+        </article>
+    
+        <div class="contact">
+          <h2 class ="titreh2">Nous Contacter </h2> 
+          <h3> Contact Us</h3>
+          <p> 
+            📞 Par Téléphone : <a> +17 15 09 2005 00</a> <br>
+            Mr. JJ : <a> +17 27 01 2006 00</a> <br>
+            Mme. MS : <a> +17 04 09 2023 06</a> 
+          </p>
+          <p>
+            ✉️ Par email :  <a href="JJlebest@tristandecunha.sop">JJlebest@tristandecunha.sop </a>
+          </p>
+        </div>
+    
+        
+       <h2> My Google Maps </h2>
+         <iframe class= "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62028545.43495713!2d-55.29686231254255!3d-18.3964024691146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1a1af6dc9b%3A0x69ee2d95dc98aedb!2sTristan%20da%20Cunha!5e0!3m2!1sfr!2sfr!4v1700037881933!5m2!1sfr!2sfr" ></iframe>
+          
+    
+      </section>
+    </main>
+    
+    <footer>
+      <p>MOURTHY Sopana et BIGIRIMANA Jean Joris </p>
+      <address>
+         <p>Tristan de Cunha </p>
+         <p>le lien des source</p>
+           <a href="./rapportprojetcwac.odt" target="blank">Rapport (docx)</a>
+         <a href="./rapportprojetcwacVV.pdf" target="blank">Rapport (pdf)</a>
+       </address>
+      </footer>
+    
+  </body>
+</html>
+  

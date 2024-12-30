@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {/* image en arrière plan */
+  background-image: url(backg.jpg);
+}
+
+body aside img {
+  float: left ;
+}
+
+/*page de navigation  */
+nav{ 
+  background-color: white ;
+  padding: 1px;
+  border: 1px solid black ;
+}
+
+
+nav ul{
+justify-content: space-around;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 22%;
+  background-color: black;
+}
+nav ul li a{
+  text-decoration: none;
+  color:white;
+  background-color:black;
+  width:100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  border: 1px solid black ;
+  display: inline-block;
+  text-align: center;
+
+}
+nav ul li:hover a{
+  color:black;
+  background-color: white ;
+  transition: 0.5s all ;
+}
+
+
+/* IMAGE VIDEO CARTE*/
+.logo { /* logo de l'academie */ 
+  width: 140px;
+  height: auto; 
+  position: fixed; /* pour qu'il ne bouge pas sur la page et reste en haut à droite */
+  top:15px; 
+  left: 15px; 
+  right: 15px;
+  z-index: 1000;
+
+}
+.logo2{
+  float: right ;
+  width: 100px;
+  height: auto; 
+  margin-top: auto; 
+
+}
+
+.img{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 60%;
+}
+
+
+/* TITRES */ 
+/* pour tous les titres , avec le meme style*/
+h1{
+  color: black ;
+  text-align: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+h1.a{
+  color: black ;
+  text-align: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-size: 5rem;
+}
+
+/* Pour les petits titres surtout en anglais  */ 
+h2{
+  color: black ;
+  text-align: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+
+header{
+  border: 1px solid black;
+  margin : 1rem;
+}
+
+div{
+  margin: 1rem;
+  padding: 1rem;
+}
+div.a{
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+p{
+  color: black ;
+  text-align: center;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  font-size: 110%;
+}
+
+p.b{
+  color: black ;
+  text-align: center;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+
+
+
+footer{ /* bas de la page */
+  background-color: gray;
+  margin: 1rem; 
+  }
+footer p {
+  text-align: center; 
+}
+
+/* Pour que le site soit responsive   */
+    @media screen and (max-width: 900px) {
+      /* navigateur*/
+      nav ul li{
+        flex-direction: column;
+        margin: 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav ul li {
+        width: 100%;
+      }
+
+      /* formulaire*/
+      main form label,
+      main form input,
+      main form select,
+      main form input[type=file],
+      main form input[type=checkbox] {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      main form input[type=submit],
+      main form input[type=reset] {
+        width: 100%;
+        margin: 20px 0 0 0;
+      }
+
+      /*carte*/
+      .map{
+        max-width: 80%;
+        max-height: 50%;
+        margin: 1rem; 
+        display: flex; 
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      /*video*/
+      
+
+  iframe:hover{
+        background-color: black;
+        border: 10px solid black;
+        transition:0.3s all ;
+      }
+    }

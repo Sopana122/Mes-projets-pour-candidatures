@@ -1,0 +1,46 @@
+.blocformation {
+  margin-bottom: 70%;
+}
+
+/* Style des éléments  page formation */
+.element {
+  float: left;
+  width: calc(30% - 40px);
+  /*  la largeur des éléments */
+  margin: 1.5%;
+  /*  une marge entre les éléments */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+}
+
+/* Style des images des éléments */
+.element img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style des petit petit  titres h3  des éléments */
+.element h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Style des paragraphes des éléments */
+.element p {
+  margin-bottom: 8px;
+}
+
+/* Style du texte avec prix  */
+.element p:last-child {
+  font-weight: bold;
+  color: #4a7729;
+}
+
+/* Style du texte avec modules  */
+.modules {
+  color: #bf0c0c;
+}
